@@ -1,7 +1,7 @@
-console.log('123');
+class Sorter {
+  constructor(public collection: number[]) {}
 
-const logSomething = () => {
-  console.log('something');
-};
+  sort(): void {}
+}
 
-logSomething();
+const rter = new Sorter([1, 2, 5, 4]);
