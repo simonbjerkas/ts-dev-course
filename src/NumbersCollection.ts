@@ -1,6 +1,6 @@
-import { CharachtersCollection } from './Sorter';
+import { Sortable } from './Sorter';
 
-export class NumbersCollection implements CharachtersCollection {
+export class NumbersCollection implements Sortable {
   constructor(public data: number[]) {}
 
   get length(): number {
