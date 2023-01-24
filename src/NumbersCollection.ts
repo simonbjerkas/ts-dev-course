@@ -1,4 +1,6 @@
-export class NumbersCollection {
+import { CharachtersCollection } from './Sorter';
+
+export class NumbersCollection implements CharachtersCollection {
   constructor(public data: number[]) {}
 
   get length(): number {
