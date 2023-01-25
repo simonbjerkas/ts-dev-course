@@ -2,7 +2,7 @@ import { CsvFileReader } from './CsvFileReader';
 import { MatchReader } from './MatchReader';
 import { OutputAnalysis } from './OutputAnalysis';
 import { WinsAnalysis } from './analyzers/WinsAnalysis';
-import { ConsoleReport } from './reportTarget/ConsoleReport';
+import { HtmlReport } from './reportTarget/HtmlReport';
 
 const csvFileReader = new CsvFileReader('football.csv');
 
@@ -11,7 +11,7 @@ matchReader.load();
 
 const outputAnalysis = new OutputAnalysis(
   new WinsAnalysis('Man United'),
-  new ConsoleReport()
+  new HtmlReport('report')
 );
 
 outputAnalysis.buildAndPrintReport(matchReader.matches);
