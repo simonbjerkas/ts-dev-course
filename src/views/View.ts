@@ -1,8 +1,6 @@
-interface ModelForView {
-  on(eventName: string, callback: () => void): void;
-}
+import { HasId, Model } from './../models/Model';
 
-export abstract class View<T extends ModelForView> {
+export abstract class View<T extends Model<K>, K extends HasId> {
   constructor(public parent: Element, public model: T) {
     this.bindModel();
   }
