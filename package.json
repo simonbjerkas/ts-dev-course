@@ -1,0 +1,26 @@
+{
+  "name": "basic-login",
+  "version": "1.0.0",
+  "description": "Basic login with hardcoded credentials, main focus on using ts with Express",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonbjerkas/basic-login.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonbjerkas/basic-login/issues"
+  },
+  "homepage": "https://github.com/simonbjerkas/basic-login#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
