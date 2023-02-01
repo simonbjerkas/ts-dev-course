@@ -3,13 +3,12 @@ import cookieSession from 'cookie-session';
 import express, { Request, Response } from 'express';
 import { AppRouter } from './AppRouter';
 import './controllers/LoginController';
-import { router } from './routes/loginRoutes';
+import './controllers/RootController';
 
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieSession({ keys: ['asd'] }));
-app.use(router);
 app.use(AppRouter.getInstance());
 
 app.listen(3000, () => {
