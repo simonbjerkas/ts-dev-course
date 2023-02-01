@@ -7,13 +7,13 @@ import { Methods } from './Methods';
 function bodyValidators(keys: string): RequestHandler {
   return function (req: Request, res: Response, next: NextFunction): void {
     if (!req.body) {
-      res.status(422).send('Invalid request');
+      res.status(422).send('Missing body property');
       return;
     }
 
     for (let key of keys) {
       if (!req.body[key]) {
-        res.status(422).send('Invalid request');
+        res.status(422).send(`Missing property ${key}`);
         return;
       }
     }
