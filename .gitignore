@@ -1,52 +1,49 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+basic-login/.DS_Store
+basic-login/build/
+basic-login/node_modules/
+basic-login/src/.DS_Store
+basic-login/src/controllers/.DS_Store
+
+
+football-stats/build/
+football-stats/node_modules/
+
+
+maps/API-KEY
+maps/dist/
+maps/node_modules/
+
+
+rrts/.DS_Store
+rrts/node_modules/
+
+rrts/.pnp
+rrts/.pnp.js
+
+rrts/coverage/
+
+rrts/build/
+
+rrts/.env.local
+rrts/.env.development.local
+rrts/.env.test.local
+rrts/.env.production.local
+
+rrts/npm-debug.log*
+rrts/yarn-debug.log*
+rrts/yarn-error.log*
+
+
+rrts/build
+rrts/tsconfig.json
+rrts/node_modules
+
+
+web-framework/dist
+web-framework/.parcel-cache
+web-framework/db.json
+web-framework/node_modules/
+
+sort-arrays/node_modules/
+
 .DS_Store
-
-=======
-node_modules
-build
->>>>>>> basic-login/main
-=======
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
->>>>>>> rrts/main
-=======
-dist
-.parcel-cache
-node_modules
-db.json
->>>>>>> web-framework/main
-=======
-/node_modules
-tsconfig.json
-/build
->>>>>>> football-stats/main
-=======
-/build
-tsconfig.json
-/node_modules
->>>>>>> sort-arrays/main
