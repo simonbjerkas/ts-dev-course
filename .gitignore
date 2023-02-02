@@ -35,7 +35,6 @@ rrts/yarn-error.log*
 
 
 rrts/build
-rrts/tsconfig.json
 rrts/node_modules
 
 
