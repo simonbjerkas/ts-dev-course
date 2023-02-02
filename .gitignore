@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .DS_Store
 
 =======
@@ -38,3 +39,8 @@ dist
 node_modules
 db.json
 >>>>>>> web-framework/main
+=======
+/node_modules
+tsconfig.json
+/build
+>>>>>>> football-stats/main
