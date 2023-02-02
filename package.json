@@ -1,0 +1,26 @@
+{
+  "name": "sort-arrays",
+  "version": "1.0.0",
+  "description": "Sort linked arrays from lowest value to highest value",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonbjerkas/sort-arrays.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonbjerkas/sort-arrays/issues"
+  },
+  "homepage": "https://github.com/simonbjerkas/sort-arrays#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}

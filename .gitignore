@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .DS_Store
 
 =======
@@ -44,3 +45,8 @@ db.json
 tsconfig.json
 /build
 >>>>>>> football-stats/main
+=======
+/build
+tsconfig.json
+/node_modules
+>>>>>>> sort-arrays/main
