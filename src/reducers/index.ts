@@ -1,6 +1,11 @@
 import { combineReducers } from 'redux';
+import { Todo } from './../actions/index';
 import { todosReducers } from './todos';
 
-export const reducers = combineReducers({
+export interface StoreState {
+  todos: Todo[];
+}
+
+export const reducers = combineReducers<StoreState>({
   todos: todosReducers,
 });
