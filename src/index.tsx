@@ -1,36 +1,21 @@
+import { configureStore } from '@reduxjs/toolkit';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import { App } from './components/App';
+import { reducers } from './reducers';
 
-interface AppProps {
-  color?: string;
-}
-
-const App = (props: AppProps): JSX.Element => {
-  return <div>{props.color}</div>;
-};
-
-// class App extends React.Component<AppProps> {
-//   state = { counter: 0 };
-
-//   onIncrement = (): void => {
-//     this.setState({ counter: this.state.counter + 1 });
-//   };
-//   onDecrement = (): void => {
-//     this.setState({ counter: this.state.counter - 1 });
-//   };
-
-//   render(): React.ReactNode {
-//     return (
-//       <div>
-//         <button onClick={this.onIncrement}>Increment</button>
-//         <button onClick={this.onDecrement}>Decrement</button>
-//         {this.state.counter}
-//       </div>
-//     );
-//   }
-// }
+const store = configureStore({
+  reducer: reducers,
+  middleware: [thunk],
+});
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
 
-root.render(<App color="red" />);
+root.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
